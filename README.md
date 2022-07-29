@@ -15,5 +15,5 @@ and inspect state while controlling how the chain operates.
 
 
 ## You can visit and use this website using
-**https://hasttar.000webhostapp.com/**
+**[https://hasttar.000webhostapp.com/](https://62e3a8c2c1b4d36baf5af44f--hasttarapp.netlify.app)**
 
