@@ -1,23 +1,18 @@
 //this js file will deploy our transactions
-const main = async () => {
-  
-  const Transactions = await hre.ethers.getContractFactory("Transactions");
-  const transactions = await Transactions.deploy();
+const hre = require('hardhat')
 
-  await transactions.deployed();
+async function main() {
+  const hasttarCoinFactory = await hre.ethers.getContractFactory('HasttarCoin')
+  const hasttarCoin = await hasttarCoinFactory.deploy()
 
-  console.log("Transactions deployed to: ", transactions.address);
+  await hasttarCoin.deployed()
+
+  console.log('Hasttar Coin deployed to:', hasttarCoin.address)
 }
 
-const runMain = async () => {
-  try{
-    await main();
-    process.exit(0);
-  }
-  catch(error){
+main()
+  .then(() => process.exit(0))
+  .catch(error => {
     console.error(error)
-    process.exit(1);
-    }
-  }
-
-  runMain();
+    process.exit(1)
+  })

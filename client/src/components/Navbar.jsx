@@ -17,10 +17,11 @@ const Navbar = () =>{
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'/>
             </div>
-            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-            {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
-                <NavbarItem key={item + index} title={item}/>
-            ))}
+            <ul class="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+                <li class="mx-4 cursor-pointer undefined"><a href="https://62e398b63bb3b35f8b3bbc54--peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
+                <li class="mx-4 cursor-pointer undefined"><a href="https://www.youtube.com/">Exchange</a></li>
+                <li class="mx-4 cursor-pointer undefined"><a href="https://academy.binance.com/en">Tutorials</a></li>
+                <li class="mx-4 cursor-pointer undefined"><a href="https://www.youtube.com/">Wallets</a></li>                
 
             <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                 Login
@@ -38,9 +39,10 @@ const Navbar = () =>{
                         <li className='text-xl w-full my-2'>
                             <AiOutlineClose onClick={() => setToggleMenu(false)}/>
                         </li>
-                        {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
-                        <NavbarItem key={item + index} title={item} classProps="my-2 text-lg"/>
-                        ))}
+                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://62e398b63bb3b35f8b3bbc54--peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
+                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://www.youtube.com/">Exchange</a></li>
+                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://academy.binance.com/en">Tutorials</a></li>
+                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://www.youtube.com/">Wallets</a></li>
                     </ul>
                   )}
             </div>
