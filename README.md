@@ -15,5 +15,8 @@ and inspect state while controlling how the chain operates.
 
 
 ## You can visit and use this website using
-**https://hasttar.000webhostapp.com/**
+**https://62e3a8c2c1b4d36baf5af44f--hasttarapp.netlify.app**
+
+Files deployed on the above site 
+Marketplace : https://62e398b63bb3b35f8b3bbc54--peaceful-frangipane-db9b4b.netlify.app/
 
