@@ -22,7 +22,7 @@ const Navbar = () =>{
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'/>
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-                <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
+                <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://hasttar-marketplace-app.netlify.app/">Market</a></li>
                 <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://coinmarketcap.com/rankings/exchanges/">Exchange</a></li>
                 <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://academy.binance.com/en">Tutorials</a></li>
                 <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://changelly.com/">Wallets</a></li>                
@@ -44,7 +44,7 @@ const Navbar = () =>{
                         <li className='text-xl w-full my-2'>
                             <AiOutlineClose onClick={() => setToggleMenu(false)}/>
                         </li>
-                        <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
+                        <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://hasttar-marketplace-app.netlify.app/">Market</a></li>
                         <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://coinmarketcap.com/rankings/exchanges/">Exchange</a></li>
                         <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://academy.binance.com/en">Tutorials</a></li>
                         <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://changelly.com/">Wallets</a></li>
