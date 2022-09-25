@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import logo from '../../images/hasttar-logo.png';
+import { TransactionContext } from "../context/TransactionContext";
 
 const NavbarItem = ({title, classProps}) => {
     return (
@@ -10,7 +11,10 @@ const NavbarItem = ({title, classProps}) => {
         </li>
     )
 }
+
+
 const Navbar = () =>{
+    const { connectWallet } = useContext(TransactionContext);
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
         <nav className='w-full flex md:justify-center justify-between items-center p-4'>
@@ -24,7 +28,8 @@ const Navbar = () =>{
                 <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://changelly.com/">Wallets</a></li>                
 
             <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-                Login
+                {!(connectWallet) ? <button type="button" onClick={connectWallet}>Login</button> : "Already Logged In"}
+                
             </li>
             </ul>
             <div className='flex relative'>

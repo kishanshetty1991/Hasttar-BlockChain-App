@@ -15,8 +15,8 @@ and inspect state while controlling how the chain operates.
 
 
 ## You can visit and use this website using
-**https://62e3a8c2c1b4d36baf5af44f--hasttarapp.netlify.app**
+https://hasttar-blockchain-app.netlify.app/
 
 Files deployed on the above site 
-Marketplace : https://62e398b63bb3b35f8b3bbc54--peaceful-frangipane-db9b4b.netlify.app/
+Marketplace : https://peaceful-frangipane-db9b4b.netlify.app/
 
