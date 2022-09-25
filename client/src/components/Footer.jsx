@@ -7,10 +7,10 @@ const Footer = () =>{
                     <img src={logo} alt="logo" className='w-32'/> 
                 </div>
                 <div className='flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full'>
-                    <p className='text-white text-base text-center mx-2 cursor-pointer'>Market</p>
-                    <p className='text-white text-base text-center mx-2 cursor-pointer'>Exchange</p>
-                    <p className='text-white text-base text-center mx-2 cursor-pointer'>Tutorials</p>
-                    <p className='text-white text-base text-center mx-2 cursor-pointer'>Wallets</p>
+                    <p className='text-white text-base text-center mx-2 cursor-pointer'><a target="_blank" href="https://peaceful-frangipane-db9b4b.netlify.app/">Market</a></p>
+                    <p className='text-white text-base text-center mx-2 cursor-pointer'><a target="_blank" href="https://coinmarketcap.com/rankings/exchanges/">Exchange</a></p>
+                    <p className='text-white text-base text-center mx-2 cursor-pointer'><a target="_blank" href="https://academy.binance.com/en">Tutorials</a></p>
+                    <p className='text-white text-base text-center mx-2 cursor-pointer'><a target="_blank" href="https://changelly.com/">Wallets</a></p>
 
 
                 </div>

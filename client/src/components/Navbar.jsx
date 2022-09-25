@@ -17,11 +17,11 @@ const Navbar = () =>{
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'/>
             </div>
-            <ul class="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-                <li class="mx-4 cursor-pointer undefined"><a href="https://62e398b63bb3b35f8b3bbc54--peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
-                <li class="mx-4 cursor-pointer undefined"><a href="https://www.youtube.com/">Exchange</a></li>
-                <li class="mx-4 cursor-pointer undefined"><a href="https://academy.binance.com/en">Tutorials</a></li>
-                <li class="mx-4 cursor-pointer undefined"><a href="https://www.youtube.com/">Wallets</a></li>                
+            <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+                <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
+                <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://coinmarketcap.com/rankings/exchanges/">Exchange</a></li>
+                <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://academy.binance.com/en">Tutorials</a></li>
+                <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://changelly.com/">Wallets</a></li>                
 
             <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                 Login
@@ -39,10 +39,10 @@ const Navbar = () =>{
                         <li className='text-xl w-full my-2'>
                             <AiOutlineClose onClick={() => setToggleMenu(false)}/>
                         </li>
-                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://62e398b63bb3b35f8b3bbc54--peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
-                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://www.youtube.com/">Exchange</a></li>
-                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://academy.binance.com/en">Tutorials</a></li>
-                        <li class="mx-4 cursor-pointer my-2 text-lg"><a href="https://www.youtube.com/">Wallets</a></li>
+                        <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://peaceful-frangipane-db9b4b.netlify.app/">Market</a></li>
+                        <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://coinmarketcap.com/rankings/exchanges/">Exchange</a></li>
+                        <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://academy.binance.com/en">Tutorials</a></li>
+                        <li className="mx-4 cursor-pointer my-2 text-lg"><a target="_blank" href="https://changelly.com/">Wallets</a></li>
                     </ul>
                   )}
             </div>
