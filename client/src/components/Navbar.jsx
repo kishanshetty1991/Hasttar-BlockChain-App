@@ -14,7 +14,7 @@ const NavbarItem = ({title, classProps}) => {
 
 
 const Navbar = () =>{
-    const { connectWallet } = useContext(TransactionContext);
+    const { connectWallet, currentAccount } = useContext(TransactionContext);
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
         <nav className='w-full flex md:justify-center justify-between items-center p-4'>
@@ -27,8 +27,8 @@ const Navbar = () =>{
                 <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://academy.binance.com/en">Tutorials</a></li>
                 <li className="mx-4 cursor-pointer undefined"><a target="_blank" href="https://changelly.com/">Wallets</a></li>                
 
-            <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-                {!(connectWallet) ? <button type="button" onClick={connectWallet}>Login</button> : "Already Logged In"}
+            <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer'>
+                {!currentAccount ? <button type="button" onClick={connectWallet}>Login Using Connect Wallet Button</button> : "Already Logged In"}
                 
             </li>
             </ul>
